@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObectInfo">
+
+    <ScrollView
+        android:id="@+id/obectScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="80dp">
+
+        <TextView
+            android:id="@+id/obect_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/obectiLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/work_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#abd991"
+            android:text="работно време"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/ent_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#77a377"
+            android:text="входни такси"
+            android:textColor="#000"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#abd991"
+            android:text="контакти"
+            android:textColor="#000"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/GPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#77a377"
+            android:text="GPS координати"
+            android:textColor="#000"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/photoGalery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#abd991"
+            android:text="Снимки"
+            android:textColor="#000"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/obectiLayout"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/visited"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="10sp"
+            android:text="посетен"
+            android:onClick="visitedToggle"/>
+
+        <TextView
+            android:id="@+id/ratingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/ratingBar"
+            android:gravity="right|center_vertical"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:scaleX="0.8"
+            android:scaleY="0.9"
+            android:stepSize="0.1"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">100 Национални Туристически Обекта</string>
+    <string name="moiat_profil">Моят профил</string>
+    <string name="places">Обекти</string>
+    <string name="poseteni">Посетени</string>
+    <string name="karta">Карта</string>
+    <string name="camera">Снимки</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
